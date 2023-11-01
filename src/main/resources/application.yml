@@ -14,7 +14,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
 #JimuReport[minidao配置]
 minidao:
-  base-package: org.jeecg.modules.jmreport.desreport.dao*
+  base-package: org.jeecg.modules.jmreport.*
   db-type: mysql
 #JimuReport[上传配置]
 jeecg:
@@ -35,7 +35,7 @@ jeecg:
     accessKey: ??
     secretKey: ??
     staticDomain: ??
-    bucketName: ??
+    bucketName: jimureport
   # minio
   minio:
     minio_url: http://minio.jeecg.com

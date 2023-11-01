@@ -15,10 +15,15 @@
     <description>JM-BiReport-Demo</description>
     <properties>
         <java.version>1.8</java.version>
+        <jimureport.version>1.6.4</jimureport.version>
         <mysql-connector-java.version>5.1.49</mysql-connector-java.version>
         <minio.version>8.0.3</minio.version>
     </properties>
     <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -37,7 +42,7 @@
         <dependency>
             <groupId>org.jeecgframework.jimureport</groupId>
             <artifactId>jimureport-spring-boot-starter</artifactId>
-            <version>1.6.4</version>
+            <version>${jimureport.version}</version>
         </dependency>
         <dependency>
             <groupId>mysql</groupId>
@@ -45,6 +50,21 @@
             <version>${mysql-connector-java.version}</version>
             <optional>true</optional>
             <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
+            <version>9.0.78</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>5.3.30</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webflux</artifactId>
+            <version>5.2.5.RELEASE</version>
         </dependency>
 
     </dependencies>
